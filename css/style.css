@@ -1,13 +1,36 @@
-body{
+body {
     background-color: #1C1C1C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.inner-color{
-   background-color: #273549; 
+
+.inner-color {
+    background-color: #1F2937;
 }
-h1 {color: white;}
-h1 span{
+
+h1 {
+    color: white;
+}
+
+p.top-text {
+    color: #D5D4D8;
+}
+
+h1 span {
     color: #10B981;
 }
-.btn-color{background-color: #10B981;}
-hr{color: white;}
 
+.btn-color {
+    background-color: #10B981;
+}
+
+hr {
+    color: white;
+}
+
+.password-container {
+    background-color: #273549;
+    height: 39px;
+    margin-right: 10px;
+    color: #10B981;
+
+}
