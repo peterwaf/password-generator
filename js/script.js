@@ -5,25 +5,37 @@ let passwordOne = document.getElementById("password-el-1")
 let passwordTwo = document.getElementById("password-el-2")
 let passwordGeneratorButton = document.getElementById("password-generator-button")
 let passwordOneContainer = []
+let passwordTwoContainer = []
 
 //create a function to generate the passwords up to 15 characters
 
 let passwordGeneratorMachine = (arr) => {
     for (let index = 0; index < arr.length; index++) {
         let randomCharacter = arr[randomNumberGenerator()]
+        let randomCharacter2 = arr[randomNumberGenerator()]
         if (passwordOneContainer.length < 15) {
             passwordOneContainer.push(randomCharacter)
+            passwordTwoContainer.push(randomCharacter2)
         }
     }
-    return passwordOneContainer
-}
+    //assign the new passwords array to variables GeneratedPassword1,GeneratedPassword12
+    let GeneratedPassword1Array = passwordOneContainer
+    let GeneratedPassword2Array = passwordTwoContainer
+    let firstPassword=""
+    let secondPassword=""
 
-//create a function to display the generated passwords
+    //display the password1 in the front end
 
-let passwordGenerator = (passwordArray) =>{
-    passwordArray.forEach(element => {
-        passwordOne.innerText += element
-    });
+    for (let index = 0; index < GeneratedPassword1Array.length; index++) {
+        firstPassword += GeneratedPassword1Array[index];
+    }
+    //display the password2 in the front end
+    for (let index = 0; index < GeneratedPassword2Array.length; index++) {
+        secondPassword += GeneratedPassword2Array[index];
+    }
+    passwordOne.textContent = firstPassword
+    passwordTwo.textContent = secondPassword
+
 }
 
 //create an es6 Js function to generate random numbers
