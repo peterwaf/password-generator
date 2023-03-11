@@ -24,15 +24,20 @@ let passwordGeneratorMachine = (arr) => {
     let firstPassword=""
     let secondPassword=""
 
-    //display the password1 in the front end
+    //update firstPassword
 
     for (let index = 0; index < GeneratedPassword1Array.length; index++) {
         firstPassword += GeneratedPassword1Array[index];
     }
-    //display the password2 in the front end
+
+    //update secondPassword
+
     for (let index = 0; index < GeneratedPassword2Array.length; index++) {
         secondPassword += GeneratedPassword2Array[index];
     }
+
+    //display the passwords in the front end
+
     passwordOne.textContent = firstPassword
     passwordTwo.textContent = secondPassword
 
