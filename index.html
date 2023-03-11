@@ -17,15 +17,23 @@
             <div class="col-lg-9 col-md-9 m-auto inner-color">
                 <h1 class="text-justify">Generate<br><span>Random Passwords</span></h1>
                 <p class="top-text">Never use an insecure password again</p>
-                <button class="btn btn-lg mb-4 mt-4 btn-color text-white" id="password-generator-button" onclick="passwordGeneratorMachine(characters)">Generate Passwords </button>
+                <button class="btn btn-lg mb-4 mt-4 mr-2 btn-color text-white" id="password-generator-button" onclick="passwordGeneratorMachine(characters)">Generate Passwords </button>
                 <hr>
                 <div class="row mb-4 m-auto">
-                    <span class="placeholder col-lg-5 col-md-5 col-xs-12 password-container" id="password-el-1">
+                    <span class="placeholder col-lg-5 col-md-5 col-xs-12 password-container" id="password-el-1" onclick="copyOneToClipboard();">
                     </span>
                     <br>
                     <span class="placeholder col-lg-5 col-md-5 col-xs-12 password-container" id="password-el-2">
                     </span>
                 </div>
+
+                <div class="row mb-4">
+                    <div class="col-lg-9 col-md-9 inner-color">
+
+                        <button type="button" class="btn-sm" onclick="window.location.reload();">Reload..</button>
+                    </div>
+                    
+                    </div>
 
             </div>
         </div>
